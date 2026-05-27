@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "react",
+    "react-perf",
+    "import",
+    "promise",
+    "typescript",
+    "vitest"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "pedantic": "warn",
+    "perf": "warn"
+  },
+  "ignorePatterns": [
+    "**/*.{spec,bench}.tsx",
+    "**/*.{cjs,js}"
+  ],
+  "rules": {
+    "eqeqeq": ["error", "smart"]
+  }
+}
