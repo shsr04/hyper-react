@@ -20,6 +20,8 @@ jobs:
       with:
         cache: 'yarn'
     - run: yarn install --immutable
+    - name: Install peer dependencies
+      run: yarn add --dev react react-dom && git checkout -- .
     - run: yarn run lint
     - run: yarn run build
     - run: yarn run test
