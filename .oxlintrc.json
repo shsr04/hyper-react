@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": [
     "react",
     "react-perf",
@@ -14,6 +15,7 @@
     "perf": "warn"
   },
   "ignorePatterns": [
+    "dist/",
     "**/*.{spec,bench}.tsx",
     "**/*.{cjs,js}"
   ],

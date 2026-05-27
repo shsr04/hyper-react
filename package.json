@@ -2,13 +2,16 @@
     "name": "hyper-react",
     "type": "module",
     "private": true,
+    "files": ["dist"],
+    "module": "dist/hyper-react.js",
+    "types": "dist/hyper-react.d.ts",
     "packageManager": "yarn@4.13.0",
     "peerDependencies": {
         "react": ">=18",
         "react-dom": ">=18"
     },
     "scripts": {
-        "build": "tsc && vite build",
+        "build": "vite build && tsc",
         "reformat": "prettier --write --cache --log-level warn './**/*.{ts,tsx}'",
         "lint": "yarn run reformat && oxlint",
         "test": "vitest"

@@ -2,6 +2,18 @@
 
 `hyper-react` provides a simple hook factory for **making React hooks globally shared across an entire React application**.
 
+## Installation
+
+First, make sure you have installed the React packages:
+```sh
+yarn add react react-dom
+```
+
+Then, install `hyper-react` from this repo:
+```sh
+yarn add "hyper-react@https://github.com/shsr04/hyper-react#v1.0.0"
+```
+
 ## Usage
 
 Minimal usage example:

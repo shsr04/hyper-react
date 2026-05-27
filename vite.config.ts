@@ -11,6 +11,9 @@ export default defineConfig(_ => {
                 entry: "src/hyper-react.ts",
                 formats: ["es"],
             },
+            rolldownOptions: {
+                external: ["react", /react-dom/u],
+            },
         },
         plugins: [react()],
     }
